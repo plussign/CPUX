@@ -1,0 +1,13 @@
+Open GPU DB
+Copyright 2026 onepunk
+
+This product includes data from the dbgpu project by Benjamin Paine:
+https://github.com/painebenjamin/dbgpu
+
+dbgpu is licensed under the MIT License. The imported dataset, its exact tool
+version, checksum, and retrieval date are recorded in
+data/imports/dbgpu/metadata.json.
+
+Open GPU DB adds normalization, stable identifiers, aliases, official
+vendor corrections and additions, field-level provenance, validation, and
+generated artifacts. See README.md for the layering model.

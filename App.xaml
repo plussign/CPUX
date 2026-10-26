@@ -1,0 +1,27 @@
+<Application x:Class="CpuX.App" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Application.Resources>
+    <SolidColorBrush x:Key="BackgroundBrush" Color="#101418"/>
+    <SolidColorBrush x:Key="PanelBrush" Color="#191F25"/>
+    <SolidColorBrush x:Key="LineBrush" Color="#2B343D"/>
+    <SolidColorBrush x:Key="MutedBrush" Color="#A3B0BC"/>
+    <SolidColorBrush x:Key="AccentBrush" Color="#8DE0C2"/>
+    <Style TargetType="TextBlock"><Setter Property="Foreground" Value="#EDF2F5"/></Style>
+    <Style TargetType="Button">
+      <Setter Property="Foreground" Value="#E4EBEF"/><Setter Property="Background" Value="#242D35"/>
+      <Setter Property="BorderBrush" Value="#3C4954"/><Setter Property="BorderThickness" Value="1"/>
+      <Setter Property="Padding" Value="15,9"/><Setter Property="Cursor" Value="Hand"/>
+      <Setter Property="Template"><Setter.Value><ControlTemplate TargetType="Button">
+        <Border x:Name="Surface" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="6" Padding="{TemplateBinding Padding}">
+          <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </Border>
+        <ControlTemplate.Triggers>
+          <Trigger Property="IsMouseOver" Value="True"><Setter TargetName="Surface" Property="Background" Value="#35434C"/></Trigger>
+          <Trigger Property="IsKeyboardFocused" Value="True"><Setter TargetName="Surface" Property="BorderBrush" Value="#8DE0C2"/></Trigger>
+          <Trigger Property="IsEnabled" Value="False"><Setter TargetName="Surface" Property="Opacity" Value="0.4"/></Trigger>
+        </ControlTemplate.Triggers>
+      </ControlTemplate></Setter.Value></Setter>
+    </Style>
+    <Style TargetType="ToolTip"><Setter Property="Background" Value="#27333C"/><Setter Property="Foreground" Value="White"/></Style>
+    <Style TargetType="ScrollViewer"><Setter Property="PanningMode" Value="VerticalOnly"/></Style>
+  </Application.Resources>
+</Application>

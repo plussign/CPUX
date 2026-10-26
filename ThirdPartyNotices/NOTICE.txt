@@ -1,0 +1,33 @@
+CPUX 1.1 — third-party hardware reference data
+
+These notices apply to the third-party data, not to the CPUX application source.
+
+1. libcpuid — https://github.com/anrieff/libcpuid
+   Copyright 2008 Veselin Georgiev.
+   BSD-2-Clause; full notice in libcpuid-BSD-2-Clause.txt.
+   Intel/AMD identification tables converted to compressed JSON. CPUX implements
+   conservative signature/brand matching, not the complete libcpuid algorithm.
+   No libcpuid driver or executable component is included.
+
+2. Open GPU DB — https://github.com/onepunk/open-gpu-db
+   Copyright 2026 onepunk. Apache-2.0.
+   Full license and notice in OpenGPUDB-Apache-2.0.txt and OpenGPUDB-NOTICE.txt.
+   Catalog v1.3.0 is normalized into CPUX's offline data format. This includes
+   dbgpu data by Benjamin Paine (MIT); see dbgpu-MIT.txt.
+   Upstream original specification references include TechPowerUp and vendor
+   documentation. Field-level source URLs are retained where provided.
+
+3. RightNow GPU Database — https://github.com/RightNow-AI/RightNow-GPU-Database
+   Apache-2.0; see RightNow-Apache-2.0.txt.
+   Supplementary fields are merged only for identical IDs, names and vendors.
+   Open GPU DB takes precedence for shared normalized specification fields.
+   The upstream repository identifies dbgpu / TechPowerUp as data sources.
+
+4. PCI ID Repository — https://pci-ids.ucw.cz/
+   Copyright Martin Mares and Albert Pool. Distributed under BSD-3-Clause;
+   see PCI-IDs-BSD-3-Clause.txt. Entries are compressed without modification.
+
+Data snapshot imported on 2026-10-26. The embedded Data/manifest.json records
+input URLs, record counts, versions and SHA-256 fingerprints. The CPUX runtime
+does not download data or contact these sites. Reference specifications are
+not measurements of the current hardware or confirmations of board variants.

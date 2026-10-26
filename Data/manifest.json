@@ -1,0 +1,35 @@
+{
+  "SchemaVersion": 1,
+  "ImportedAt": "2026-10-26",
+  "CpuRules": 888,
+  "GpuRecords": 2923,
+  "GpuVersion": "1.3.0",
+  "PciVersion": "2026.10.26",
+  "Sources": [
+    {
+      "File": "recog_intel.c",
+      "Url": "https://raw.githubusercontent.com/anrieff/libcpuid/master/libcpuid/recog_intel.c",
+      "Sha256": "a8fbb5fa63d8c82f996aad9d8c97c382c7393ce571764173faf676de90f71dc4"
+    },
+    {
+      "File": "recog_amd.c",
+      "Url": "https://raw.githubusercontent.com/anrieff/libcpuid/master/libcpuid/recog_amd.c",
+      "Sha256": "167be1a73503901088c74db70bbdf98ce5b2e59c48844e9ea16e404044904910"
+    },
+    {
+      "File": "gpu-catalog.json",
+      "Url": "https://raw.githubusercontent.com/onepunk/open-gpu-db/main/dist/catalog.json",
+      "Sha256": "1470b6ca853c1d9fc52a7eb452dbe1677743ad4e98c007f0cf1e9f55f8398acf"
+    },
+    {
+      "File": "gpu-all.json",
+      "Url": "https://raw.githubusercontent.com/RightNow-AI/RightNow-GPU-Database/main/data/all-gpus.json",
+      "Sha256": "43a85e8a8963ededd5ca9551e57412d61b351b0adb09c4cda4a751d4ace434f6"
+    },
+    {
+      "File": "pci.ids",
+      "Url": "https://raw.githubusercontent.com/pciutils/pciids/master/pci.ids",
+      "Sha256": "477b285b6aaa5357d98bad24b405852cd98cefe2251c4714416d00d3b616cc09"
+    }
+  ]
+}

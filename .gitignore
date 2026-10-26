@@ -1,0 +1,17 @@
+bin/
+obj/
+.vs/
+artifacts/
+.build/
+*.user
+*.suo
+.idea/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+*.pfx
+*.p12
+*.pem
+*.key
